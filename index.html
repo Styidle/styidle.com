@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STYIDLE | #STUDYWITHIDEALSWITHSTYIDLE | Just Learn & Make some fun </title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    /* border: 0; */
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-family: sans-serif;
+    transition: .9s;
+}
+header{
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    background-color:rgb(143, 255, 143);
+    animation: anim 5s;
+}
+@keyframes anim {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+div.brand a{
+    margin: 0vh 3vw;
+    /* font-weight: 600; */
+    color: darkgoldenrod;
+    font-weight: bolder;
+    font-size: 36px;
+    font-family: 'Kaushan Script', cursive;
+    width: 20vw;
+    /* background-color: darkgoldenrod; */
+}
+nav{
+    display: flex;
+    align-items: center;
+    /* position: sticky;
+    top: 0; */
+    justify-content: center;
+    animation: anim 5s;
+}
+@keyframes anim {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+nav ul {
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    padding: 0vh 1vw;
+    font-size: large;
+    overflow: hidden;
+}
+nav ul li a::after{
+    content: "";
+    color: black;
+    width: 0%;
+    position: absolute;
+    /* display: block; */
+    height:4px;
+    left: 0;
+    bottom: -3.5px;
+    /* bottom: -10px; */
+    background-color: black;
+    transition: .5s ;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+form.form{
+    display: flex;
+    align-items: center;
+}
+form input{
+    outline: none;
+    padding: 1.2vh 2vh;
+    border-radius: 15px;
+    font-size:normal;
+    font-weight: 200;
+    width: 15vw;
+    border: rgb(0, 255, 85) solid;
+    /* box-shadow: 35px 35px 35px 35px greenyellow; */
+}
+button{
+    background-color: rgb(57, 196, 57);
+    color: white;
+    padding: 5px;
+    border: greenyellow solid;
+    /* box-shadow: 35px 35px 35px 35px rgb(50, 255, 101); */
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: medium;
+}
+div.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100vw;
+    height: 92vh;
+    background: linear-gradient(90deg,rgb(174, 178, 255),rgb(255, 167, 167));
+    animation: anim 5s;
+}
+@keyframes anim {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+div.text{
+    width: 40vw;
+    /* height: 50vh;
+    padding: 5vh 0vw; */
+    overflow: visible;
+}
+div.text p{
+    padding-top: 2vh;
+    padding-bottom: 4vh;
+}
+div.img img{
+    width: 35vw;
+    /* background: lightseagreen; */
+    /* clip-path: circle(); */
+}
+a.button{
+    margin: 0vh 13vw !important;
+    padding:1vh 3vw ;
+    background:red;
+    color: white;
+    font-size: large;
+    border-radius: 15px;
+}
+div.courses{
+    padding: 4vh 0vw;
+    /* background-color: lightcyan; */
+    /* height: 100vh; */
+    animation: anim 5s;
+}
+@keyframes anim {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+div.courses h1{
+    text-align: center;
+    padding: 2vh 0vw;
+    /* color: green; */
+    background-color:  gold;
+    margin: 0vh 30vw;
+    border: black solid ;
+    border-radius: 45px;
+    font-size: 24px;
+    box-shadow:1px 1px 29px gold;
+    /* clear: both; */
+}
+div.course{
+    display: block;
+    padding: 5vh 5vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div.sub{
+    /* border: gold solid; */
+    padding: 3vh 2vw;
+    box-shadow:1px 1px 29px rgb(255, 188, 17);
+    margin: 0vh 2vw;
+    background-color: white;
+}
+div.sub:hover{
+    box-shadow:1px 1px 19px 25px rgb(255, 188, 17);
+}
+div.navto{
+    display: none;
+}
+div.sub img{
+    width: 35vw;
+}
+div.sub h3{
+    padding: 2vh 0vw;
+}
+div#study h1{
+    background-color:greenyellow;
+    box-shadow:1px 1px 29px rgb(154, 255, 3);
+}
+div#stu{
+    box-shadow:1px 1px 39px rgb(154, 255, 3);
+}
+div#stu:hover{
+    box-shadow:1px 1px 19px 25px rgb(57, 255, 17);
+}
+div.stud img{
+    width: 10vw;
+    border-radius: 50%;
+}
+                       /* HELLO */
+div.coursera{
+    padding: 4vh 0vw;
+    /* background-color: lightcyan; */
+    /* height: 100vh; */
+    animation: anim 5s;
+}
+@keyframes anim {
+    from{
+        width: 0%;
+    }
+    to{
+        width:100%;
+    }
+}
+div.navto{
+    display: none;
+}
+div.coursera h1{
+    text-align: center;
+    padding: 2vh 0vw;
+    /* color: green; */
+    background-color:cyan;
+    margin: 0vh 30vw;
+    border: black solid ;
+    border-radius: 45px;
+    font-size: 24px;
+    box-shadow:1px 1px 19px rgb(0, 201, 201);
+    /* clear: both; */
+}
+div.course{
+    display: flex;
+    padding: 5vh 5vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+div.subs{
+    /* border: gold solid; */
+    padding: 3vh 2vw;
+    box-shadow:1px 1px 29px rgb(70, 219, 219);
+    margin: 0vh 2vw;
+    background-color: white;
+}
+div.subs:hover{
+    box-shadow:1px 1px 19px 25px cyan;
+}
+div.subs img{
+    width: 15%;
+    border: solid black;
+    border-radius: 50%;
+}
+div.subs h3{
+    padding: 2vh 0vw;
+}
+div.era h1{
+    background-color: goldenrod ;
+}
+div#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vh 5vw;
+    overflow: visible;
+}
+div#cont{
+    box-shadow:1px 1px 29px burlywood;
+    height: 80vh;
+    width: 70vw;    
+    padding: 3vh 2vw;
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+div#cont:hover{
+    box-shadow:1px 1px 19px 25px burlywood;
+}
+div#cont h2{
+    font-size: xx-large;
+}
+div.ask{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: x-large;
+    padding: 2vh 0vw;
+    text-align: left !important;
+}
+div.ask input#about{
+    height: 15vh;
+    text-align: left;
+    overflow: scroll !important;
+}
+div.ask input{
+    /* box-shadow: none; */
+    justify-content: left;
+    width: 35vw;
+    outline: none;
+    height: 6vh;
+    overflow: scroll;
+    font-size: medium;
+    padding-left: 0.5vw;
+}
+div.ask h4{
+    text-align: left;
+    padding: 0vh 2vw;
+}
+div.form{
+    padding: 3vh 5vw;
+}
+div#cont button{
+    width: 10vw;
+    background-color: red;
+    font-weight: bolder;
+    /* height: 7vh; */
+}
+footer#footer{
+    background-color: black;
+    padding: 5vh 0vw;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+footer#footer div.links{
+    padding: 2vh 5vw;
+}
+footer#footer div.links li{
+    text-align: center;
+    padding: 2vh 0vw;
+    color: tomato;
+    /* border-bottom: white solid0; */
+}
+div#toggler{
+    display: none;
+}
+footer#footer div.links a{
+    display: flex;
+    color: turquoise;
+    text-align: center;
+    padding: 1vh 0vw;
+}
+footer.footer{
+    width: 100vw;
+    text-align: center;
+    background-color: gainsboro;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: small uppercase;
+}
+@media screen and (max-width: 1115px) {
+    
+div.brand a{
+    margin: 0vh 0vw;
+    /* font-weight: 600; */
+    color: darkgoldenrod;
+    font-weight: bolder;
+    font-size: 26px;
+    padding: 0vh 2vw;
+    font-family: 'Kaushan Script', cursive;
+    width: 20vw;
+    /* background-color: darkgoldenrod; */
+}
+input,footer a{
+    font-size: small;    
+}
+footer.footer div.links a{
+    padding: 0;
+}
+  }
+  @media screen and (max-width:860px) {
+      
+      div.brand a{
+          font-size: small;
+          z-index: 1;
+      }
+      footer{
+          overflow: visible;
+      }
+      div.text h1{
+          font-size:35px;
+      }
+      div.text p{
+          font-size: small;
+      }
+      nav ul,form.form{
+          display: none;
+      }    
+      div#toggler{
+          display: block;
+      }
+      header{
+          justify-content: center;
+          position: relative;
+          overflow: visible;
+          animation: none;
+      }
+      div.navto{
+          position: relative;
+          z-index: 1;
+          height: 100vh;
+          top: 45vh;
+          left: 25vw;
+          padding: 15vh 2vw;
+          width: 40vw;
+          background-color: black;
+          overflow: hidden;
+          display: none;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          /* text-align: center; */
+          animation: opac .5s;
+
+      }
+      @keyframes opac {
+          from{
+              opacity: 0;
+          }
+          to{
+              opacity: 1;
+          }          
+      }
+      div.navto ul li{
+          padding: 3vh 5vw;
+          /* margin-left: -5vw; */
+      }
+      div.navto ul li a{
+          color: white;
+      }
+      
+div.brand a{
+    font-size: 26px;
+}
+form input{
+    font-size:small;
+}
+button{
+    font-size: x-small;
+}
+a.button{
+    font-size: small;
+}
+div.courses h1{
+    font-size: 14px;
+}
+div.coursera h1{
+    text-align: center;
+    padding: 2vh 0vw;
+    /* color: green; */
+    background-color:cyan;
+    margin: 0vh 30vw;
+    border: black solid ;
+    border-radius: 45px;
+    font-size: 14px;
+    box-shadow:1px 1px 19px rgb(0, 201, 201);
+    /* clear: both; */
+}
+div.subs{
+    display: block;
+    height: auto;
+}
+div.main div.img img{
+    padding: 3vh 0vw;
+    width: 60vw;
+    z-index: 1;
+    text-align: center;
+    margin: auto 20vw;
+}
+div.text{
+    /* text-align: center; */
+    margin: 5vh 30vw;
+}
+div.main{
+    /* text-align: center; */
+    /* padding: 6vh 30vw; */
+    height: auto;
+    z-index: 0.7;
+    display: block;
+}
+div.course:nth-child(1){
+    padding: 5vh 0vw;
+    margin: 5vh 0vw !important;
+}
+div.course{
+    display: block;
+    height: auto;
+}
+div#cont h2{
+    font-size: x-large;
+}
+div.ask{
+    font-size: medium;
+}
+div.ask input{
+    font-size: x-small;
+}
+div#contact{
+    padding: auto auto;
+    width: 100vw;
+
+}
+form button{
+    font-size: 6px;
+    /* padding: 2vh 2vw; */
+    width: 812vw;
+}
+div#cont{
+    margin: auto auto;
+    padding: auto;
+    width: fit-content;
+}
+  footer#footer{
+      display: block;
+  }
+  footer#footer div.links a{
+      display: block;
+  }
+  div.main{
+      margin: auto;
+      padding: auto;
+  }
+}
+@media screen and (max-width:654px) {
+    div.text{
+        /* text-align: center; */
+        margin: 5vh 10vw;
+        font-size: xx-large;
+    }   
+    footer.footer{
+        font-size: 7px
+    }
+    div.navto{
+        overflow: visible;
+        height: auto;
+        width: 100vw;
+    }
+    div.brand a{
+        font-size: small;
+    }
+}
+    </style>
+    <script>
+		function openFunction() {
+			// document.getElementsByTagName(".navto").style.width="30vw";
+            // document.getElementById("gazab").style.width="40vw";
+            document.getElementById("gazab").style.display="block";
+            document.getElementById("head").style.height="100vh";
+            document.getElementById("head").style.overflow="hidden";
+            // document.getElementById("gazab").style.height="100vh";
+            // document.getElementsByTagNameNS("body").style.height="100vh";
+		};
+		function closeFunction() {
+			// document.getElementsByTagName(".navto").style.width="30vw";
+            // document.getElementById("gazab").style.width="0vw";
+            document.getElementById("gazab").style.display="none";
+            document.getElementById("head").style.height="auto";
+            document.getElementById("head").style.overflow="auto";
+		};
+        if (document.getElementById("gazab").style.display="block") {
+            document.getElementById("oho").style.fontSize="xx-small";
+        }
+        else{
+            document.getElementById("oho").style.fontSize="normal";
+        }
+	</script>
+
+</head>
+<body>
+    <div id="head">
+    <div id="home">
+        <header>
+            <div class="brand" id="brands"><a href="index.html" id="oho">STYIDLE</a>
+            </div>
+            <div id="toggler">
+                <h3 onclick="openFunction()" ondblclick="closeFunction()">&#9776;</h3>
+            </div>
+            <nav>
+                <ul id="ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#study">Study Materials</a></li>
+                    <!-- <li><a href="#">Game Zone</a></li> -->
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+                
+            <form action="#courses" class="form">
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit">Search</button>
+            </form>
+            </nav>
+            <div class="navto" id="gazab">  
+                <ul id="ul">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#study">Study Materials</a></li>
+                    <!-- <li><a href="#">Game Zone</a></li> -->
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#study">Study Materials</a></li>
+                    <!-- <li><a href="#">Game Zone</a></li> -->
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a onclick="closeFunction()" class="close">Close</a></li>
+                </ul>
+                
+            <form action="#courses" class="form">
+                <input type="text" placeholder="What are you looking for?">
+                <button type="submit">Search</button>
+            </form>
+            </div>
+        </header>
+        <div class="main" id="home">
+            <div class="text">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, vero?</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum recusandae placeat tenetur voluptate maiores consequatur a? Possimus dolores excepturi consequuntur. Lorem ipsum dolor sit amet </p>
+                <a href="#courses" class="button">Explore</a>
+            </div>
+            <div class="img">
+                <img src="/undraw_learning_2q1h.svg" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="courses" id="courses">
+        <h1>Our Popular Courses</h1>
+        <div class="course">
+            <div class="sub">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+                <h3> Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+            </div>
+            <div class="sub">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+                <h3> Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+            </div>
+        </div>
+        <div class="course">
+            <div class="sub">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+                <h3> Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+            </div>
+            <div class="sub">
+                <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+                <h3> Lorem, ipsum.</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="courses" id="study">
+        <h1>Study Materials</h1>
+    <div class="course">
+        <div class="sub" id="stu">
+            <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+        <div class="sub" id="stu">
+            <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+    </div>
+    <div class="course">
+        <div class="sub" id="stu">
+            <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+        <div class="sub" id="stu">
+            <img src="https://cdn.pixabay.com/photo/2016/11/30/12/17/cells-1872666__340.jpg" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+    </div>
+</div>
+<hr>
+<div id="rev">
+    <div class="coursera" >
+        <h1>Reviews</h1>
+    <div class="course">
+        <div class="subs">
+            <img src="https://images.pexels.com/photos/1320701/pexels-photo-1320701.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+        <div class="subs">
+            <img src="https://images.pexels.com/photos/1320701/pexels-photo-1320701.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+    </div>
+    <div class="course">
+        <div class="subs">
+            <img src="https://images.pexels.com/photos/1320701/pexels-photo-1320701.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+        <div class="subs">
+            <img src="https://images.pexels.com/photos/1320701/pexels-photo-1320701.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" alt="Math">
+            <h3> Lorem, ipsum.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, ipsam voluptatibus in, itaque vel debitis illo perferendis illum autem quo optio adipisci reiciendis repudiandae nulla alias corrupti, ipsum quia necessitatibus maxime ratione!</p>
+        </div>
+    </div>
+    <hr>
+    <div id="contact">
+        <div id="cont">
+            <h2>Get In Touch</h2>
+            <hr>
+            <form action="#">
+            <div class="form">
+            <div class="ask">
+                <h4>Name :</h4>
+                <input type="text" required placeholder="Your name">
+            </div>
+            <div class="ask">
+                <h4>Email :</h4>
+                <input type="email" required placeholder="example@example.com">
+            </div>
+            <div class="ask">
+                <h4>Phone :</h4>
+                <input type="number" length="10" required  placeholder="1234567890">
+            </div>
+            <div class="ask">
+                <h4>About :</h4>
+                <input type="text" id="about" required placeholder="About yourself or your feedback">
+            </div>
+        </div>
+        <button>SUBMIT</button>
+    </form>
+    </div>
+    </div>
+    <footer id="footer">
+        <div class="brand">
+            <a href="index.html">STYIDLE</a>
+        </div>     
+        <div class="links">
+            <li>Ouick links</li>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+        </div>   
+        <div class="links">
+            <li>Ouick links</li>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+        </div>   
+        <div class="links">
+            <li>Ouick links</li>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+        </div>   
+        <div class="links">
+            <li>Ouick links</li>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+            <a href="#courses">Popular Courses</a>
+            <a href="#study">Study Materials</a>
+        </div>   
+    </footer>
+    <footer class="footer">
+        <h3>© Copyright | All rights Reserved | © Styidle | Terms & Conditons</h3>
+    </footer></div>
+    <!-- </script> -->
+</body>
+</html>
